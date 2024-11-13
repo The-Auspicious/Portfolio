@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!--<li><a href="#projects">Projects</a></li>-->
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" style="background-image: url('hero-bg.jpg');" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Welcome to My Portfolio</h1>
+        <p>Hi, I'm Shubham Bhoi, AI enabled Software Developer.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+        <img src="profile.jpg" alt="Profile Picture of Shubham Bhoi">
+        <h2 id="about-heading">About Me</h2>
+        <p>● Versatile, ambitious and passionate Software developer with 3+ years of experience proficient in Java , Spring Boot and micro-services architecture with strong domain expertise in SAAS platform in social services procurement.
+        <br>● Demonstrated expertise in streamlining development processes through CI/CD pipelines and PostgreSQL management, resulting in an 90% completion rate for user stories per sprint.
+        <br>● Proven ability to work with cross-functional teams to deliver projects on time.
+        </p> <li>My Skills : What I know !</li>
+            </p>
+        <ul>
+           
+            <ul>
+                <li>Java</li>
+                <li>SpringBoot</li>
+                <li>PGSQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Jenkins</li>
+                <li>Python</li>
+            </ul>
+           
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+   <!-- <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="live-demo-link">Live Demo</a>
+                <a href="github-repo-link">GitHub</a>
+            </div>
+           
+        </div>
+    </section>
+-->
+    <!-- Work Experience Section -->
+    <section id="work-experience" aria-labelledby="work-experience-heading">
+        <h2 id="work-experience-heading">Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Senior Systems Engineer</h3>
+                    <h4>Infosys Limited</h4>
+                    <span>Dec 2021 - Present</span>
+                    <p>Being a senior developer, while designing the backend of both the modules, I collaborated with UX/UI designers to translate client requirements into a user-friendly and intuitive interface and developed backend REST APIs and designed DB tables with reusability and optimisation in mind. This resulted in First Time Right development with great quality and positive feedback from client.
+                    </p>
+                    <ul>
+                        <li>○	Agile development using JIRA </li>
+                        <li>○	AI Assisted development </li>
+                        <li>○	Comprehensive Error handling mechanism </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Repeat timeline-item div for more work experiences -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Me</h2>
+        <form action="submit-form-link" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-media">
+            <a href="https://linkedin.com/in/shubham-bhoi-7706b5163/">Linkedin</a>
+            <a href="https://github.com/The-Auspicious/Projects">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Shubham Bhoi. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
