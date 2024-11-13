@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const ripple = document.createElement('span');
             ripple.classList.add('ripple');
             link.appendChild(ripple);
-
+ 
             // Remove ripple effect after animation
             setTimeout(() => {
                 ripple.remove();
