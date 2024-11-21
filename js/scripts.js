@@ -20,14 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Dark Mode Toggle
-    const darkModeToggle = document.createElement('button');
-    darkModeToggle.textContent = 'Toggle Dark Mode';
-    document.body.appendChild(darkModeToggle);
 
-    darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
 
     // Contact Form Validation
     const contactForm = document.querySelector('#contact form');
@@ -109,5 +102,65 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('mouseout', () => {
             cursor.classList.remove('hover');
         });
+    });
+});
+
+
+// Star rating function
+function displayStarRating(skillName, rating) {
+    const skillContainer = document.createElement('div');
+    skillContainer.classList.add('skill');
+
+    const skillNameElement = document.createElement('div');
+    skillNameElement.classList.add('skill-name');
+    skillNameElement.textContent = skillName;
+
+    const starContainer = document.createElement('div');
+    starContainer.classList.add('star-container');
+
+    for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('span');
+        star.classList.add('star');
+        if (i <= rating) {
+            star.classList.add('filled-star');
+        } else {
+            star.classList.add('empty-star');
+        }
+        starContainer.appendChild(star);
+    }
+
+    skillContainer.appendChild(skillNameElement);
+    skillContainer.appendChild(starContainer);
+
+    document.getElementById('skills-container').appendChild(skillContainer);
+}
+
+// Example usage
+displayStarRating('Java', 5);
+displayStarRating('SpringBoot', 4);
+displayStarRating('PostgreSQL', 3);
+displayStarRating('GenAI', 4);
+displayStarRating('HTML', 3);
+displayStarRating('CSS', 3);
+displayStarRating('JavaScript', 3);
+displayStarRating('Github', 3);
+displayStarRating('Python', 3);
+displayStarRating('Jenkins', 4);
+
+window.addEventListener('scroll', function() {
+    const welcomeContent = document.querySelector('.welcome-content');
+    if (window.scrollY > 50) {
+        welcomeContent.classList.add('fade-out');
+    } else {
+        welcomeContent.classList.remove('fade-out');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
     });
 });
