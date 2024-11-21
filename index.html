@@ -4,67 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <!--<li><a href="#projects">Projects</a></li>-->
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#work-experience"><i class="fas fa-history"></i> Work Experience</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
+       
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" style="background-image: url('hero-bg.jpg');" aria-labelledby="hero-heading">
+    <section id="hero" style="background-image: url('/images/background.jpg');" aria-labelledby="hero-heading">
         <h1 id="hero-heading">Welcome to My Portfolio</h1>
         <p>Hi, I'm Shubham Bhoi, AI enabled Software Developer.</p>
     </section>
 
     <!-- About Section -->
     <section id="about" aria-labelledby="about-heading">
-        <img src="profile.jpg" alt="Profile Picture of Shubham Bhoi">
+        <img src="/images/profile.jpg" alt="Profile Picture of Shubham Bhoi">
         <h2 id="about-heading">About Me</h2>
         <p>● Versatile, ambitious and passionate Software developer with 3+ years of experience proficient in Java , Spring Boot and micro-services architecture with strong domain expertise in SAAS platform in social services procurement.
         <br>● Demonstrated expertise in streamlining development processes through CI/CD pipelines and PostgreSQL management, resulting in an 90% completion rate for user stories per sprint.
         <br>● Proven ability to work with cross-functional teams to deliver projects on time.
-        </p> <li>My Skills : What I know !</li>
-            </p>
-        <ul>
-           
-            <ul>
-                <li>Java</li>
-                <li>SpringBoot</li>
-                <li>PGSQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Jenkins</li>
-                <li>Python</li>
-            </ul>
-           
-        </ul>
     </section>
 
-    <!-- Projects Section -->
-   <!-- <section id="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Brief description of the project.</p>
-                <a href="live-demo-link">Live Demo</a>
-                <a href="github-repo-link">GitHub</a>
-            </div>
-           
-        </div>
+    <!-- Skills Section -->
+    <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div id="skills-container"></div>
     </section>
--->
+
+  <!-- Projects Section -->
+<section id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <h3>Projects</h3>
+            <h4>● Grocery Store</h4>
+            <p>This project is a simple web-based grocery store application. Application is fully developed using genAI. It allows users to browse products, add them to a cart, and purchase them. </p>
+            <a href="https://the-auspicious.github.io/GroceryStore/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/The-Auspicious/GroceryStore.git"><i class="fab fa-github"></i> GitHub</a>        
+        </div>
+        <!-- Repeat project-item div for more projects -->
+    </div>
+</section>
+
     <!-- Work Experience Section -->
     <section id="work-experience" aria-labelledby="work-experience-heading">
         <h2 id="work-experience-heading">Work Experience</h2>
@@ -88,29 +82,20 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Me</h2>
-        <form action="submit-form-link" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required aria-required="true">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required aria-required="true">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required aria-required="true"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <div class="social-media">
-            <a href="https://linkedin.com/in/shubham-bhoi-7706b5163/">Linkedin</a>
-            <a href="https://github.com/The-Auspicious/Projects">GitHub</a>
-        </div>
+    <!-- Contact Information -->
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:bhoishubham91@gmail.com">bhoishubham91@gmail.com</a>
+        <br>Phone: +91 1234567890
+        <br>LinkedIn: <a href="https://linkedin.com/in/shubham-bhoi-7706b5163/">Click here</a></p>
+    </div>
     </section>
-
-    <!-- Footer Section -->
     <footer>
-        <p>© 2024 Shubham Bhoi. All rights reserved.</p>
+        <p>&copy; 2024 Shubham Bhoi. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript File -->
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
