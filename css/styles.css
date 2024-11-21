@@ -103,7 +103,7 @@ header nav ul li a {
 
 /* Hero Section Styles */
 #hero {
-    background: url('/images/header-bg.jpg') no-repeat center center/cover;
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
