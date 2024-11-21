@@ -34,7 +34,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: url('/images/header-bg.jpg') no-repeat center center/cover;
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 1.1rem 0;
     position: fixed;
